@@ -12,5 +12,3 @@ Authors: Abby Ressner
 *  [MessageDigest docs](https://docs.oracle.com/javase/8/docs/api/java/security/MessageDigest.html)
 *  [Byte docs](https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html#toUnsignedInt-byte-)
 *  [String docs](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#format-java.lang.String-java.lang.Object...-)
-
-
