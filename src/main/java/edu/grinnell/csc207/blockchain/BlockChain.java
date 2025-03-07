@@ -3,12 +3,13 @@ package edu.grinnell.csc207.blockchain;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * A linked list of hash-consistent blocks representing a ledger of
- * monetary transactions.
+ * A linked list of hash-consistent blocks representing a ledger of monetary
+ * transactions.
  */
 public class BlockChain {
 
     private static class Node {
+
         Block block;
         Node next;
 
