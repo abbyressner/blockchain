@@ -10,6 +10,7 @@ Authors: Abby Ressner
 
 * added Javadoc comments to all methods in BlockChain.java, Block.java, and Hash.java
 * fixed `append()`
+* resolved all checkstyle violations
 
 ## Resources
 
