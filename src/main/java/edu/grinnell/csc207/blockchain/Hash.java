@@ -16,7 +16,6 @@ public class Hash {
         this.data = data;
     }
 
-
     /**
      * Returns the byte array representing the hash.
      * 
@@ -25,7 +24,6 @@ public class Hash {
     public byte[] getData() {
         return this.data;
     }
-
 
     /**
      * Checks if the hash is valid.
