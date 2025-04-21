@@ -20,7 +20,7 @@ public class BlockChain {
         }
     }
 
-    private Node head;
+    private final Node head;
 
     private Node tail;
 
@@ -122,7 +122,7 @@ public class BlockChain {
                 alice = currentBlock.getAmount();
                 bob = 0;
             } else {
-                if (!currentBlock.getPrevHash().equals(prev.block.getHash())) {
+                if (prev != null && !currentBlock.getPrevHash().equals(prev.block.getHash())) {
                     return false;
                 }
                 int amount = currentBlock.getAmount();

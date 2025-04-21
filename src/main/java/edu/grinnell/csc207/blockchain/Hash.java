@@ -5,7 +5,7 @@ package edu.grinnell.csc207.blockchain;
  */
 public class Hash {
 
-    private byte[] data;
+    private final byte[] data;
 
     /**
      * Creates a new Hash object.

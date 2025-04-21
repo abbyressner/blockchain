@@ -9,11 +9,11 @@ import java.security.NoSuchAlgorithmException;
  */
 public class Block {
 
-    private int num;
-    private int amount;
-    private Hash prevHash;
-    private long nonce;
-    private Hash hash;
+    private final int num;
+    private final int amount;
+    private final Hash prevHash;
+    private final long nonce;
+    private final Hash hash;
 
     /**
      * Creates a new Block.
@@ -54,7 +54,7 @@ public class Block {
      * @return the nonce that produces a valid hash
      * @throws NoSuchAlgorithmException if the hashing algorithm is not found
      */
-    public long miner() throws NoSuchAlgorithmException {
+    public final long miner() throws NoSuchAlgorithmException {
         long calculatedNonce = 0;
         Hash newHash = calculateNoNonceHash(calculatedNonce);
         while (!newHash.isValid()) {
@@ -70,7 +70,7 @@ public class Block {
      * @return the hash of this block
      * @throws NoSuchAlgorithmException if the hashing algorithm is not found
      */
-    public Hash calculateHash() throws NoSuchAlgorithmException {
+    public final Hash calculateHash() throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("sha-256");
         ByteBuffer b = 
             ByteBuffer.allocate(64).putInt(this.num).putInt(this.amount).putLong(this.nonce);
